@@ -40,7 +40,7 @@ button {
 
 .hero-area {
   min-height: min(100svh, 870px);
-  padding: 38px 0 48px;
+  padding: 30px 0 40px;
   background:
     linear-gradient(180deg, transparent 0 73%, #050706 100%),
     var(--active-bg) center / cover;
@@ -49,7 +49,7 @@ button {
 
 .hero-shell {
   position: relative;
-  width: min(86vw, 1320px, calc((100svh - 170px) * 16 / 9));
+  width: min(88vw, 1360px, calc((100svh - 130px) * 16 / 9));
   aspect-ratio: 16 / 9;
   margin: 0 0 0 6vw;
   overflow: hidden;
