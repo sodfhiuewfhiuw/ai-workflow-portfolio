@@ -50,9 +50,9 @@ button {
 
 .hero-stage {
   position: relative;
-  width: min(88vw, 1360px, calc((100svh - 130px) * 16 / 9));
+  width: min(76vw, 1180px, calc((100svh - 190px) * 16 / 9));
   aspect-ratio: 16 / 9;
-  margin: 0 0 0 6vw;
+  margin: 0 0 0 4.5vw;
 }
 
 .hero-shell {
@@ -86,9 +86,9 @@ button {
 .hero-copy {
   position: absolute;
   z-index: 4;
-  top: 21%;
+  top: 20%;
   left: clamp(38px, 6.4vw, 86px);
-  width: min(690px, 49vw);
+  width: min(620px, 46vw);
   transform: none;
 }
 
@@ -104,7 +104,7 @@ button {
   max-width: 720px;
   margin: 0;
   color: #fff;
-  font-size: clamp(32px, 2.55vw, 44px);
+  font-size: clamp(30px, 2.28vw, 40px);
   font-weight: 520;
   letter-spacing: 0;
   line-height: 1.08;
@@ -114,7 +114,7 @@ button {
   max-width: 620px;
   margin: 14px 0 0;
   color: rgba(255, 255, 255, 0.9);
-  font-size: clamp(13px, 0.86vw, 15px);
+  font-size: clamp(12px, 0.8vw, 14px);
   line-height: 1.62;
 }
 
@@ -145,7 +145,7 @@ button {
 
 .active-capability strong {
   color: #fff;
-  font-size: clamp(18px, 1.28vw, 22px);
+  font-size: clamp(17px, 1.16vw, 20px);
   line-height: 1.1;
 }
 
@@ -192,8 +192,8 @@ button {
 .orbit {
   position: absolute;
   z-index: 3;
-  inset: -8% -14% 2% 58%;
-  transform: scale(1);
+  inset: -10% -24% 2% 57%;
+  transform: scale(0.82);
   transform-origin: center center;
 }
 
@@ -277,8 +277,7 @@ button {
 }
 
 .section-heading span,
-.role-section span,
-.cta-section p {
+.role-section span {
   display: block;
   margin: 0 0 12px;
   color: #b9ffe6;
@@ -289,8 +288,7 @@ button {
 }
 
 .section-heading h2,
-.role-section h2,
-.cta-section h2 {
+.role-section h2 {
   margin: 0;
   color: #fff;
   font-size: clamp(32px, 3.4vw, 54px);
@@ -437,40 +435,6 @@ button {
 .role-copy p + p {
   margin-top: 20px;
   color: rgba(185, 255, 230, 0.76);
-}
-
-.cta-section {
-  display: grid;
-  max-width: 900px;
-  margin-bottom: 0;
-  padding: 54px;
-  color: #0b1110;
-  background: linear-gradient(135deg, #d9ffef, #b7f0ff);
-  border-radius: 8px;
-  gap: 14px;
-}
-
-.cta-section svg {
-  color: #0b1110;
-}
-
-.cta-section p {
-  margin: 0;
-  color: rgba(11, 17, 16, 0.72);
-}
-
-.cta-section h2 {
-  max-width: 760px;
-  color: #0b1110;
-  font-size: clamp(28px, 3.4vw, 48px);
-}
-
-.cta-section strong {
-  max-width: 760px;
-  color: rgba(11, 17, 16, 0.82);
-  font-size: clamp(17px, 1.4vw, 22px);
-  font-weight: 650;
-  line-height: 1.65;
 }
 
 @media (max-width: 1100px) {
@@ -638,9 +602,6 @@ button {
     padding: 40px 0;
   }
 
-  .cta-section {
-    padding: 32px 24px;
-  }
 }
 
 @media (prefers-reduced-motion: reduce) {

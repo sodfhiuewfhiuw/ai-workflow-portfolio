@@ -6,7 +6,6 @@ import {
   Bot,
   ClipboardCheck,
   FileText,
-  Layers3,
   MessageSquareText,
   Route,
   Sparkles,
@@ -113,7 +112,6 @@ function App() {
         <AbilitySection />
         <ProofSection />
         <RoleSection />
-        <CtaSection />
       </main>
     </div>
   );
@@ -295,17 +293,6 @@ function RoleSection() {
           白話：我負責讓 AI 真正進到工作裡，而不是停在「大家試用看看」。
         </p>
       </div>
-    </section>
-  );
-}
-
-function CtaSection() {
-  return (
-    <section className="content-section cta-section">
-      <Layers3 size={30} />
-      <p>適合職位</p>
-      <h2>AI 應用整合助理 / AI 工作流設計 / AI 導入與自動化企劃</h2>
-      <strong>我能幫公司把現有工作流程變成 AI 可輔助、可複製、可交付的系統。</strong>
     </section>
   );
 }
