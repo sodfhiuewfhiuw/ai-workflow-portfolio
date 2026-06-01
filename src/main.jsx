@@ -149,35 +149,37 @@ function Hero() {
 
   return (
     <section className="hero-area" style={{ "--active-bg": active.image, "--accent": active.accent }}>
-      <div className="hero-shell">
-        <div className="hero-bg" />
+      <div className="hero-stage">
+        <div className="hero-shell">
+          <div className="hero-bg" />
 
-        <section className="hero-copy" aria-label="AI 落地能力介紹">
-          <div className="role-line">AI 應用整合與自動化能力</div>
-          <h1>AI 應用整合與工作流落地</h1>
-          <p className="hero-subtitle">
-            我協助企業把重複性行政、文件整理、客服回覆與內部流程，轉換成可執行的 AI 輔助流程。
-          </p>
-          <p className="plain-note">
-            不是訓練模型，而是把 AI 變成團隊真的用得起來的工作方法。
-          </p>
+          <section className="hero-copy" aria-label="AI 落地能力介紹">
+            <div className="role-line">AI 應用整合與自動化能力</div>
+            <h1>AI 應用整合與工作流落地</h1>
+            <p className="hero-subtitle">
+              我協助企業把重複性行政、文件整理、客服回覆與內部流程，轉換成可執行的 AI 輔助流程。
+            </p>
+            <p className="plain-note">
+              不是訓練模型，而是把 AI 變成團隊真的用得起來的工作方法。
+            </p>
 
-          <div className="active-capability">
-            <span>{active.label}</span>
-            <strong>{active.title}</strong>
-            <p>{active.description}</p>
-            <em>{active.plain}</em>
-          </div>
+            <div className="active-capability">
+              <span>{active.label}</span>
+              <strong>{active.title}</strong>
+              <p>{active.description}</p>
+              <em>{active.plain}</em>
+            </div>
 
-          <div className="hero-buttons">
-            <button onClick={goPrev} aria-label="上一個能力場景">
-              <ArrowUp size={18} />
-            </button>
-            <button onClick={goNext} aria-label="下一個能力場景">
-              <ArrowDown size={18} />
-            </button>
-          </div>
-        </section>
+            <div className="hero-buttons">
+              <button onClick={goPrev} aria-label="上一個能力場景">
+                <ArrowUp size={18} />
+              </button>
+              <button onClick={goNext} aria-label="下一個能力場景">
+                <ArrowDown size={18} />
+              </button>
+            </div>
+          </section>
+        </div>
 
         <section className="orbit" aria-label="AI 能力輪播">
           <svg className="orbit-line" viewBox="0 0 900 620" aria-hidden="true">
@@ -186,11 +188,11 @@ function Hero() {
           {capabilitySlides.map((slide, index) => {
             const relative = (index - currentSlide + capabilitySlides.length) % capabilitySlides.length;
             const positions = [
-              { x: 45, y: 39, size: 232, opacity: 1, z: 8 },
-              { x: 69, y: 17, size: 112, opacity: 0.95, z: 6 },
-              { x: 90, y: 46, size: 76, opacity: 0.78, z: 4 },
-              { x: 54, y: 73, size: 118, opacity: 0.88, z: 5 },
-              { x: 25, y: 57, size: 80, opacity: 0.64, z: 3 },
+              { x: 47, y: 42, size: 224, opacity: 1, z: 8 },
+              { x: 70, y: 20, size: 110, opacity: 0.95, z: 6 },
+              { x: 87, y: 50, size: 76, opacity: 0.78, z: 4 },
+              { x: 58, y: 74, size: 116, opacity: 0.88, z: 5 },
+              { x: 27, y: 59, size: 78, opacity: 0.64, z: 3 },
             ];
             const Icon = slide.icon;
             const position = positions[relative];
