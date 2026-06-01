@@ -186,11 +186,11 @@ function Hero() {
           {capabilitySlides.map((slide, index) => {
             const relative = (index - currentSlide + capabilitySlides.length) % capabilitySlides.length;
             const positions = [
-              { x: 42, y: 40, size: 232, opacity: 1, z: 8 },
-              { x: 66, y: 20, size: 116, opacity: 0.95, z: 6 },
-              { x: 82, y: 47, size: 78, opacity: 0.78, z: 4 },
-              { x: 52, y: 70, size: 118, opacity: 0.88, z: 5 },
-              { x: 27, y: 58, size: 82, opacity: 0.64, z: 3 },
+              { x: 45, y: 39, size: 232, opacity: 1, z: 8 },
+              { x: 69, y: 17, size: 112, opacity: 0.95, z: 6 },
+              { x: 90, y: 46, size: 76, opacity: 0.78, z: 4 },
+              { x: 54, y: 73, size: 118, opacity: 0.88, z: 5 },
+              { x: 25, y: 57, size: 80, opacity: 0.64, z: 3 },
             ];
             const Icon = slide.icon;
             const position = positions[relative];
